@@ -45,5 +45,4 @@ Three typical problems drove the architecture from "working" to "state-machine d
 This experiment advances from "51-MCU command control" to "STM32 state-machine backdoor", covering UART idle-line interrupt reception, GPIO/button interrupts, OLED display, and foundational firmware-security concepts. More importantly, by resolving UART contention, buffer-related delays, and main-loop blocking, it establishes an "interrupt-fills-buffer + state-machine dispatch" embedded-backdoor implementation pattern—laying the groundwork for firmware reverse engineering (Ghidra/IDA) and wireless security.
 
 ## Files
-- Source code: `Core/Src/`, `Drivers/bsp_backroot/`, `Drivers/bsp_led/`, `Drivers/bsp_oled/`, etc.
 - Full report: `实验报告.docx`
